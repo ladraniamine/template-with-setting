@@ -1,0 +1,258 @@
+:root{
+    --main-color: orange;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+/*start setting box*/
+.setting-box{
+    position: fixed;
+    left: -222px;
+    z-index: 3;
+    background-color: #fff;
+    width: 220px;
+    height: 100%;
+    transition: 0.4s;
+
+}
+.open{
+    left: 0px;
+}
+.setting-box .icon{
+    position: absolute;
+    right: -37px;
+    top: 164px;
+    background-color: #fff;
+    width: 37px;
+    height: 33px;
+    font-size: 28px;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 0px 10px 16px 0px;
+}
+.icon .icon-setting{
+    color: var(--main-color);
+}
+.setting-box .setting-content{
+
+}
+.setting-content h4{
+    color: #000;
+    padding-left: 76px;
+    margin: 0px;
+    margin-top: 19px;
+    font-size: 25px;
+}
+.setting-content ul{
+
+    padding-left: 10px;
+}
+.setting-content ul li {
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+    display: inline-block;
+    border-radius: 50%;
+    list-style: none;
+    cursor: pointer;
+}
+
+.setting-content ul li:nth-child(1){
+    background-color: orange;
+}
+
+.setting-content ul li:nth-child(2){
+    background-color: red;
+}
+
+.setting-content ul li:nth-child(3){
+    background-color: green;
+}
+
+.setting-content ul li:nth-child(4){
+    background-color: aqua;
+}
+
+.setting-content ul li:nth-child(5){
+    background-color: yellow;
+}
+.active-color{
+    border: 2px solid #000;
+}
+.background-content h4{
+    font-size: 21px;
+    padding: 0px 0px 0px 3px;
+}
+.yes, .no{
+    display: inline-block;
+    background-color: #2bd344;
+    width: 52px;
+    height: 29px;
+    margin-left: 19px;
+    margin-top: 10px;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 6px 0px 0px 23px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.active-yesno{
+    opacity: 1;
+}
+
+/*end setting box*/
+
+/*start landing page*/
+.landing-page{
+    min-height: 100vh;
+    background-image: url('../images/images.jpeg');
+    background-size: cover;
+    position: relative;
+}
+.overlay{
+    background-color: #000;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    opacity: 0.6;
+}
+
+.header-area{
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    display: flex;
+    padding: 10px;
+}
+.logo{
+    width: 17%;
+    padding: 6px 15px;
+    text-align: center;
+    font-size: 25px;
+}
+.links{
+    list-style: none;
+    width: 83%;
+    padding-left: 0;
+    text-align: center;
+}
+.links>li{
+    display: inline-block;
+    margin: 0px 47px;
+    padding: 0 10px;
+}
+.links > li > a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+.links > li > a:hover, .links > li > a.active{
+    color: var(--main-color);
+}
+
+.introduction-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+}
+
+.introduction-text h1{
+font-size: 45px;
+margin: 10px;
+}
+.introduction-text h1 span{
+    color: var(--main-color);
+}
+.introduction-text p{
+    line-height: 41px;
+    font-size: 25px;
+    width: 575px;
+    margin: 0;
+}
+
+/*end landing page*/ 
+
+/*start about us*/
+.about-us{
+padding-top: 50px;
+padding-bottom: 50px;
+display: flex;
+}
+.info-box{
+flex: 1;
+}
+.info-box h2{
+font-weight: bold;
+font-size: 30px;
+color: var(--main-color);
+}
+.info-box p{
+line-height: 1.8;
+}
+.image-box img{
+flex: 2;
+width: 400px;
+}
+
+
+/*end about us*/
+
+/*start skills*/
+.skills{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #eee;
+    margin-bottom: 100px;
+}
+.skills h2{
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--main-color);
+    text-align: center;
+}
+.skills-box{
+    background-color: #fff;
+    display: flex;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.skill-name{
+    font-weight: bold;
+    width: 100px;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 10px;
+}
+.skill-progress{
+    height: 30px;
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+.skill-progress span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--main-color);
+    transition: all .5s;
+}
+
+/*end skills*/
